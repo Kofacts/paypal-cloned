@@ -17,8 +17,17 @@
 	<title>Paypal Website Cloned!</title>
 	<!-- Link all stylesheets and JS files -->
 	<link rel="stylesheet" type="text/css" href="./assets/inc/bs/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:400,300">
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:400,300" type="text/css" >
 	<script type="text/javascript" src="./assets/inc/bs/js/bootstrap.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			$("#vids").click(function(){
+				alert("Hello");
+			});
+		});
+	</script>
 
 
 	<!-- Beginning of Header Section for Navigation -->
@@ -69,21 +78,79 @@
 	</section>
 
 	<!-- Video Content -->
-
-	<section>
 	<style type="text/css">
 		.video:before{
 			 background: rgba(0, 0, 0, 0.5);
 		}
+		.overlay {
+		  width: 100%;
+		  height: 100%;
+		  background: rgba(20,20,20, .5);
+		  display: block;
+		  position: absolute;
+		  top:0;
+		  right: 0;
+		}
+		#learnmore:hover{
+			background:#0070ba;
+		}
+
 	</style>
-	<div style="position: absolute;height: auto;  width: 100%; min-height: 700px;  overflow: hidden; outline: none; border: none;" class="video">
+	<div id="vids" style="position: absolute;height: auto;  width: 100%; min-height: 650px;  overflow: hidden; outline: none; border: none;" >
 		<video loop muted autoplay poster="./assets/images/videoframe.jpg" class="video" style="width:100%; top:0; right: 0; z-index:-1;  position: absolute; height: auto;" class="fullscreen-bg__video">
 	        <source src="./assets/images/pay-on-ebay.mp4" type="video/webm">
 	        <source src="video/big_buck_bunny.mp4" type="video/mp4">
 	        <source src="video/big_buck_bunny.ogv" type="video/ogg">
 	    </video>
+
+	    <div class="overlay">
+
+	    	<center style="padding-top: 10%;">
+	    	<span style="font-family: Verdana; color: white; font-weight: 100; font-size: 50px; ">We’ve got you covered.</span>
+	    	<p style="font-family: Verdana; color:white; font-size: 18px; ">We can reimburse you if something’s not right.</p>
+	    	<p style="font-family: Helvetica; color:white; font-size: 18px; font-weight: 30; padding-top: 10px;">Shop with peace of mind, we protect your eligible purchases. If your order doesn’t arrive or isn’t as the seller described, we can help you get your money back.</p>
+
+	    	<style type="text/css">
+	    		input[type=submit]:hover{
+	    			background: #0070ba;
+	    			color: white;
+	    		}
+	    		input[type=submit]{
+	    			background: #0079ad; 
+	    			margin-top: 20px; 
+	    			outline: none; 
+	    			border: none; 
+	    			color: black; 
+	    			min-height: 35px; 
+	    			border-radius: 25px; 
+	    			height: 50px; 
+	    			width: 321px;
+	    			font-size: 15px;
+	    			color: white;
+	    			font-style: bold;
+	    			font-family: 'Lato';
+	    			font-weight: 30px;
+	    		}
+	    	</style>
+
+	    	<input type="submit" name="submit" value="Learn More">
+
+	    	</center>
+
+	    </div>
 	 </div>   
-	</section>
+
+	
+<section style="position:absolute; margin-top: 660px; width: 100%;">
+		
+			<div class="container" style="margin: 0 auto; float: center;">
+				<button style="background: white; outline: none; border: 0.5px thin gray; border-radius: 30px; height: 30px; width:30px;"><i class="glyphicon glyphicon-question"></i></button>
+				<button style="background: white; margin-left: 10px; outline: none; border: 0.5px thin gray; border-radius: 30px; height: 30px; width:30px;"><i class="glyphicon glyphicon-question"></i></button>
+			</div>
+			
+</section>
+
+	
 
 <body>
 
